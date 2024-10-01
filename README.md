@@ -27,7 +27,7 @@ A Dynamic Movie Wallpaper Setter using Python script that enhances your desktop 
 
 1. Clone the Repository:
    ```bash
-   git clone
+   git clone https://github.com/N91489/FlickWall.git
    ```
 
 2. Change Directory:
