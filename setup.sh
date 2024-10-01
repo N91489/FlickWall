@@ -60,9 +60,9 @@ echo "TMDB_API_KEY=$api_key" > .env
 echo "API key saved to .env file."
 
 # Create a systemd service to run the Python script after the system starts and internet is connected, but only once
-echo "Setting up a service for flickwall"
+echo "Setting up a service for FlickWall"
 
-SERVICE_FILE="/etc/systemd/system/flickwall.service"
+SERVICE_FILE="/etc/systemd/system/FlickWall.service"
 cat <<EOF > $SERVICE_FILE
 
 [Unit]
@@ -73,8 +73,8 @@ After=network-online.target
 [Service]
 Type=oneshot
 User=$(whoami)
-WorkingDirectory=/opt/flickwall
-ExecStart=/usr/bin/python3 /opt/flickwall/request.py
+WorkingDirectory=/opt/FlickWall
+ExecStart=/usr/bin/python3 /opt/FlickWall/request.py
 RemainAfterExit=true
 
 [Install]
@@ -82,9 +82,9 @@ WantedBy=network-online.target
 
 EOF
 
-# Move Script to /opt/flickwall
-sudo mkdir -p /opt/flickwall
-sudo mv -r $(pwd)/flickwall /opt/flickwall
+# Move Script to /opt/FlickWall
+sudo mkdir -p /opt/FlickWall
+sudo mv -r $(pwd)/FlickWall /opt/FlickWall
 
 # Reload systemd and enable the service
 sudo systemctl daemon-reload
