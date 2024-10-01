@@ -32,7 +32,7 @@ A Dynamic Movie Wallpaper Setter using Python script that enhances your desktop 
 
 2. Change Directory:
    ```bash
-   cd flickwall
+   cd FlickWall
    ```
 
 3. Run the Installation Script:
@@ -51,7 +51,7 @@ A Dynamic Movie Wallpaper Setter using Python script that enhances your desktop 
   - For Linux:
     1. Change Directory:
        ```bash
-       cd /opt/flickwall/
+       cd /opt/FlickWall/
        ```
 
     2. Run the Uninstallation Script:
