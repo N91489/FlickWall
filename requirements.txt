@@ -1,1 +1,2 @@
 Requests==2.32.3
+Dotenv==0.19.1
