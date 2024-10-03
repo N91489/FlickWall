@@ -8,6 +8,7 @@ from dotenv import load_dotenv, find_dotenv
 
 operating_system = platform.system()
 load_dotenv(find_dotenv())
+api_key=os.getenv('TMDB_API_KEY')
 
 def getAspectRatio():
 
@@ -53,7 +54,7 @@ def getWallpaper(include_adult = "false", accordingToScreenRatio = True, removeP
         # Auth Initialization
         auth = {
             "accept": "application/json",
-            "Authorization": f"Bearer {os.getenv('TMDB_API_KEY')}"
+            "Authorization": f"Bearer {api_key}"
         }
         
         # Pull Image 
