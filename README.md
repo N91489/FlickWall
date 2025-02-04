@@ -19,7 +19,7 @@ A Dynamic Movie Wallpaper Setter using Python script that enhances your desktop 
   
 - **Startup Configuration:** The script runs on system startup, ensuring a new wallpaper is set every time the computer boots up.
   
-- **Automated Installation & Uninstallation:** Uses native Bash (Linux/macOS) and PowerShell (Windows) scripts for fully automated installation, startup configuration, and easy uninstallation.
+- **Automated Installation & Uninstallation:** Uses native Bash (Linux/macOS) for installation, startup configuration, and uninstallation.
 
   ---
 
@@ -36,27 +36,19 @@ A Dynamic Movie Wallpaper Setter using Python script that enhances your desktop 
    ```
 
 3. Run the Installation Script:
-   - For Linux:
-     ```bash
-     ./install.sh
-     ```
-   - For Windows:
-     ```bash
-     .\install.ps1
-     ```
-
+   ```bash
+   ./install.sh
+   ```
   ---
 
   ## Uninstallation
-  - For Linux:
-    1. Change Directory:
+  1. Change Directory:
        ```bash
        cd /opt/FlickWall/
        ```
 
-    2. Run the Uninstallation Script:
+  2. Run the Uninstallation Script:
        ```bash
        ./uninstall.sh
        ```
-  - For Windows:
-  - 
+
